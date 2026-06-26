@@ -1,4 +1,4 @@
-# LondonFlix OTT Demo V19
+# LondonFlix OTT Demo V20
 
 Netflix-inspired independent OTT platform demo powered by UFP Film Club.
 
@@ -27,3 +27,8 @@ Output Directory: public
 /watch/mv-001
 /watch/up-001
 /api/content
+
+
+## V20 update
+- Mobile browse catalogue changed from 2-column grid to compact 4-column Netflix-style poster wall.
+- Card body, meta and buttons are hidden on small screens to keep the grid clean.
