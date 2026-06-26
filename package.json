@@ -1,0 +1,16 @@
+{
+  "name": "londonflix-ott-demo",
+  "version": "19.0.0",
+  "description": "LondonFlix OTT demo V19 with Netflix-style mobile layout, UFP Film Club branding, trailers and runtime details.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "node build.js",
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "dependencies": {}
+}
