@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "installCommand": "npm install --no-audit --no-fund --loglevel=error",
+  "buildCommand": "npm run build",
+  "outputDirectory": "public",
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/api/content", "destination": "/data/content.json" },
+    { "source": "/watch/:slug", "destination": "/watch.html?slug=:slug" },
+    { "source": "/browse/:type", "destination": "/browse.html?type=:type" }
+  ]
+}
