@@ -1,27 +1,34 @@
-# LondonStream OTT Demo V15 – Fixed Routes + Uncropped Previews
+# LondonFlix OTT Demo V16
 
-This version fixes the Vercel 404 issue for `/watch/sf-001` by adding both Vercel rewrites and real static fallback folders such as `public/watch/sf-001/index.html`.
+Functional OTT platform demo for London/UK market with real YouTube embedded playback.
 
-It also fixes movie preview cutting by using widescreen YouTube thumbnails with safe fallback and CSS `object-fit: contain` for posters/cards.
+## V16 updates
+- Replaced broken REAPPEAR preview video with `9SA_JmEcRAE`.
+- Added Upcoming Movies 2026 trailer shelf.
+- Added richer watch-page details: availability, release window, director, cast, audio, subtitles, quality, content advice and tags.
+- Improved full-screen/card previews using 16:9 contain-fit thumbnails.
+- YouTube redirects reduced using privacy-enhanced `youtube-nocookie.com` embed and sandboxed iframe.
 
-## Vercel Settings
+## Deploy on Vercel
+Use:
 
-- Framework Preset: Other
-- Install Command: `npm install --no-audit --no-fund --loglevel=error`
-- Build Command: `npm run build`
-- Output Directory: `public`
+```text
+Framework Preset: Other
+Install Command: npm install --no-audit --no-fund --loglevel=error
+Build Command: npm run build
+Output Directory: public
+```
 
-Redeploy with **Clear Build Cache**.
+Then redeploy with Clear Build Cache.
 
 ## Test URLs
-
 - `/`
 - `/browse`
+- `/browse?type=Upcoming%202026%20Trailer`
 - `/pricing`
 - `/watch/sf-001`
-- `/watch/mv-001`
+- `/watch/up-001`
 - `/api/content`
 
-## Important
-
-Delete old files before upload: old `api/`, `views/`, `routes/`, `package-lock.json`, `node_modules/`.
+## Note on YouTube branding
+Public YouTube embeds may still display YouTube UI/branding depending on player state and browser. This demo uses privacy-enhanced embeds and iframe sandboxing to restrict external navigation as much as possible. For a commercial OTT launch, use licensed video hosting/CDN with DRM.
